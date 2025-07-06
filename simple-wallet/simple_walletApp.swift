@@ -11,7 +11,10 @@ import SwiftUI
 struct simple_walletApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            ZStack {
+                Color(.appBodyBg)
+                          .ignoresSafeArea()
+                      ContentView()
+                  }        }
     }
 }
